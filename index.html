@@ -19,29 +19,21 @@
             display:list-item;
             text-align: center;
         }
-          .second-section div {
-            transition: 2s ease-in-out ;
+          .second-section .scale{
+            transition: 1s ease-in-out ;
             border: 2px solid rgba(52, 221, 243, 0.822);
             padding: 10px;
             margin-top: 5px;
             margin-bottom: 5px;
        }
-          .second-section div:hover {
-            transform: scale(1.02);
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            row-gap: 20px;
-            justify-content:center;
-            margin: 50px  100px;
-            align-content: center;
-        }
-        .grid-container img {
-           width: 200px;
-           height: 200px;
-           border-radius: 30px;
-           border: 5px solid rgb(38, 38, 48);}
+          .second-section .scale:hover{
+            transform: scale(1.05);
+          }
+          .forms input{
+            height: auto;
+            width: 500px;
+            padding: 20px;
+          }
     </style>
   </head >
   <body class="bg-dark" >
@@ -96,39 +88,86 @@
               When I'm not at my desk, you can find me crochetting or reading novels or watching crime documentaries. I believe that the best work comes from mix of technical rigor and creative empathy.  
             </p>
         </section>
-        <section id="skills" class=" m-auto pt-3 bg-info-subtle text-dark fw-semibold">
+        <section id="skills" class=" m-auto pt-3 bg-light text-dark fw-semibold">
          <h1 class="fw-bold fst-italic  text-center"> MY SKILLS</h1>
-         <div class="grid-container">
-            <img src="images/boostrap.jpeg" alt="">
-            <img src="images/code.jpeg" alt="">
-            <img src="images/java.jpeg" alt="">
-            <img src="images/javascript.jpeg" alt="">
-            <img src="images/python.jpeg" alt="">
-            <img src="images/script.jpeg" alt="">
-         </div>
-        </section>
-        
+         <div class="text-center">
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="col">
+      <div class="p-3 ">
+        <img class="w-25" src="images/boostrap.jpeg" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 ">
+        <img class="w-25" src="images/code.jpeg" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 ">
+        <img class="w-25" src="images/script.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Row 2 -->
+  <div class="row">
+    <div class="col">
+      <div class="p-3 ">
+        <img class="w-25" src="images/java.jpeg" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 ">
+        <img class="w-25" src="images/javascript.jpeg" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 ">
+         <img class="w-25" src="images/python.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+        </section>     
         <section id="Portfolio" class=" py-5 px-5 text-light ">
             <h1 class="text-center fst-italic "> PORTFOLIO</h1>
         <section class="second-section">
             <div class="align-items-center text-center d-flex gap-2"> 
-            <div >
+              <div class="scale">
                 <a href="https://mimi-realestate.netlify.app/" target="_blank"><img class="w-100" src="images/firstproject.png" alt=""></a>
                 <h3> Mimi-realestate</h3>
-                </div>
-                <div>
+              </div>
+              <div class="scale">
                 <a href="https://mimi-cryptoswap.netlify.app/" target="_blank"><img class="w-100" src="images/secondproject.png" alt=""></a>
                 <h3>Mimi-cryptoswap</h3>
-            </div>
+              </div> 
             </div> 
             </section>
         </section> 
         </section>
-
-        <section id="Contact At">
-          
-
-        </section>
+        <section id="Contact At" class="py-5 px-5 bg-info-subtle text-center">
+          <h1 class="text-center fw-bold "> Contact At</h1>
+          <p class="text-center pb-3 fs-3 mt-3"> Reach out to me for any software development job by sending a mail or filling the form below</p>
+          <img class="justify-content-center" src="images/design.png" alt="">
+      <div>
+            <h1 class="fw-semibold">Reach Out </h1>
+        <form class="forms">
+           <input type="text"placeholder="Username" required />
+            <br />
+            <br />
+           <label for="email"><input type="email" placeholder="Email" required/>
+            <br />
+            <br />
+           <input type="text" placeholder="Subject" required>
+            <br>
+            <br>
+           <input type="text" placeholder="Message" required>
+            <br>
+            <br>
+           <input type="submit" value="submit" />
+       </form>
+      </div>
+       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
